@@ -1,0 +1,157 @@
+@use "../../variables"
+
+footer
+    width: 1440px
+    height: 395px
+    background-color: #2a2a2a
+    color: #fff
+
+    .footerContainer
+        width: 100%
+        height: 325px
+        padding: 60px 90px 40px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        border-bottom: 1px solid variables.$gray-1
+
+        .footerContent
+            height: 100%
+            display: flex
+            gap: 70px
+
+            h2
+                font-size: 13px
+                font-weight: 700
+            
+            p
+                font-size: 12px
+                font-weight: 300
+                transition: .2s
+                cursor: pointer
+
+                &:hover
+                    color: variables.$primary-color
+
+            .about
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+
+                .options
+                    display: flex
+                    flex-direction: column
+                    gap: 12px
+                    margin-bottom: 26px
+
+                .icons
+                    display: flex
+                    gap: 30px
+
+                    & > *
+                        font-size: 22px
+                        transition: .2s
+                        cursor: pointer
+
+                        &:hover
+                            color: variables.$primary-color
+
+            .info
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+
+                .options
+                    display: flex
+                    flex-direction: column
+                    gap: 12px
+
+            .payment
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                
+
+                div
+                    display: grid
+                    grid-template-columns: repeat(3, 1fr)
+                    gap: 20px
+        .footerCard
+            width: 380px
+            height: 260px
+            border-radius: 10px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            padding: 40px
+            background-color: #fff
+            color: #3F3F40
+
+            .title
+                font-size: 18px
+                font-weight: 300
+
+                span
+                    font-size: 21px
+                    font-weight: 700
+            
+            .details
+                font-size: 12px
+                font-weight: 300
+                text-align: center
+
+            form    
+                display: flex
+                justify-content: space-between
+
+                input
+                    width: 230px
+                    height: 45px
+                    border: 1px solid #2a2a2a
+                    border-radius: 4px
+                    background-color: #fff
+                    padding: 10px
+                    color: variables.$gray-1
+
+                button
+                    width: 62px
+                    height: 45px
+                    border: none
+                    border-radius: 4px
+                    background-color: variables.$primary-color
+                    color: #fff
+                    font-size: 14px
+                    font-weight: 700
+                    cursor: pointer
+                    transition: .2s
+
+                    &:hover
+                        background-color: #fff
+                        color: variables.$primary-color
+                        border: 2px solid variables.$primary-color
+
+
+    .footerRights
+        width: 100%
+        height: 70px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 20px 90px 20px
+
+        .footerCopy
+            width: 698px
+
+            p
+                font-size: 10px
+
+        .icons
+            width: 226px
+            display: flex
+            justify-content: space-between
+
+            img
+                width: auto
+                height: 32px
+
+    

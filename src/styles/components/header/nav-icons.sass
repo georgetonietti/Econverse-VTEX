@@ -1,0 +1,24 @@
+@use '../../variables'
+
+.navIconsContent
+    width: 216px
+
+    ul
+        list-style: none
+        display: flex
+        justify-content: space-between
+
+        li
+            display: flex
+            justify-content: center
+            align-items: center
+            
+            a
+                color: variables.$gray-1
+                font-size: 32px
+            
+                .box
+                    font-size: 24px
+
+                &:hover
+                    color: variables.$primary-color
